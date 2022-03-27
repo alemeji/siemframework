@@ -93,25 +93,25 @@ Usage: python3 ./siemsframework.py
 def menus(menu):
 	globals.messages(1, '')
 	if menu == 1:
-		options = enumerate(globals.main_menu, 1)
+		options_menu = enumerate(globals.main_menu, 1)
 	elif menu == "Splunk":
-		options = enumerate(globals.splunk_menu, 1)
+		options_menu = enumerate(globals.splunk_menu, 1)
 	elif menu == "Graylog":
-		options = enumerate(globals.graylog_menu, 1)
+		options_menu = enumerate(globals.graylog_menu, 1)
 	elif menu == "OSSIM":
-		options = enumerate(globals.ossim_menu, 1)
+		options_menu = enumerate(globals.ossim_menu, 1)
 	elif menu == "QRadar":
-		options = enumerate(globals.qradar_menu, 1)
+		options_menu = enumerate(globals.qradar_menu, 1)
 	elif menu == "McAfee":
-		options = enumerate(globals.mcafee_menu, 1)
+		options_menu = enumerate(globals.mcafee_menu, 1)
 	elif menu == "SIEMonster":
-		options = enumerate(globals.smonster_menu, 1)
+		options_menu = enumerate(globals.smonster_menu, 1)
 	elif menu == "ElasticSIEM":
-		options = enumerate(globals.elastic_menu, 1)
+		options_menu = enumerate(globals.elastic_menu, 1)
 	elif menu == 2:
-		options = enumerate(globals.app_menu, 1)
+		options_menu = enumerate(globals.app_menu, 1)
 
-	for c, i in options:
+	for c, i in options_menu:
 		print(Fore.GREEN + Style.BRIGHT + '\t[' + str(c) + '] ' + i)
 
 	if menu == 1:
